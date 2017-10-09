@@ -97,7 +97,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="k9C-ch-KHl">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="enter phone no." borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="k9C-ch-KHl">
                                 <rect key="frame" x="10" y="456" width="394" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="Y6g-1a-ghg"/>
@@ -123,9 +123,16 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <state key="normal" title="choose ur city "/>
+                                <connections>
+                                    <action selector="stateBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="D4Y-PN-dN0"/>
+                                </connections>
                             </button>
-                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EAA-4k-mFj">
-                                <rect key="frame" x="78" y="565" width="256" height="98"/>
+                            <pickerView hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EAA-4k-mFj">
+                                <rect key="frame" x="78" y="565" width="256" height="117"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="117" id="bij-IL-GS5"/>
+                                    <constraint firstAttribute="width" constant="256" id="saH-vg-wvX"/>
+                                </constraints>
                             </pickerView>
                         </subviews>
                         <color key="backgroundColor" red="0.81427448758440357" green="0.82568696257513974" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -133,7 +140,7 @@
                             <constraint firstItem="FQt-3S-DE4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="006-Xd-IA0"/>
                             <constraint firstItem="FQt-3S-DE4" firstAttribute="top" secondItem="FaC-CJ-OYK" secondAttribute="bottom" constant="8" symbolic="YES" id="0KK-tA-Suy"/>
                             <constraint firstItem="Fh8-8i-cOG" firstAttribute="top" secondItem="Dap-em-efn" secondAttribute="bottom" constant="8" symbolic="YES" id="13P-Ie-rBv"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="EAA-4k-mFj" secondAttribute="bottom" constant="73" id="5AH-GO-voT"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="EAA-4k-mFj" secondAttribute="bottom" constant="54" id="5AH-GO-voT"/>
                             <constraint firstItem="jPr-qT-uja" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="6eA-Ob-vP4"/>
                             <constraint firstItem="mBY-5D-0Qo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="6zR-mj-dqg"/>
                             <constraint firstItem="cWR-kR-Q5N" firstAttribute="top" secondItem="jPr-qT-uja" secondAttribute="bottom" constant="8" symbolic="YES" id="7mT-u1-NSr"/>
@@ -174,6 +181,10 @@
                             <constraint firstItem="lI4-jS-oho" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="zP8-Ni-mmr"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="statePicker" destination="EAA-4k-mFj" id="uBW-dm-1hN"/>
+                        <outlet property="statePickerBtn" destination="mBY-5D-0Qo" id="sZN-RC-Vsj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
