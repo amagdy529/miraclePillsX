@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -20,14 +20,14 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="254-PQ-pMq">
-                                <rect key="frame" x="98" y="39" width="189" height="189"/>
+                                <rect key="frame" x="64" y="39" width="258" height="258"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="1q9-kD-hGW">
-                                        <rect key="frame" x="0.0" y="0.0" width="189" height="189"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="258" height="258"/>
                                     </stackView>
                                 </subviews>
                                 <constraints>
@@ -35,25 +35,72 @@
                                 </constraints>
                             </stackView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="miraclePillEmoji" translatesAutoresizingMaskIntoConstraints="NO" id="jPr-qT-uja">
-                                <rect key="frame" x="142.5" y="61" width="90" height="100"/>
+                                <rect key="frame" x="162" y="61" width="90" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="eR0-18-RrU"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MiraclePillX" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cWR-kR-Q5N">
+                                <rect key="frame" x="138" y="186" width="139" height="127"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$1000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Big-M2-eEP">
+                                <rect key="frame" x="156" y="296" width="102" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="ZVB-2Q-pvh"/>
+                                    <constraint firstAttribute="width" constant="102" id="aBF-uU-FmG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dap-em-efn">
+                                <rect key="frame" x="20" y="392" width="101" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="EtQ-2L-8de"/>
+                                    <constraint firstAttribute="width" constant="101" id="waw-Aj-UX4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fh8-8i-cOG">
+                                <rect key="frame" x="20" y="443" width="374" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="dOs-qY-yhS"/>
+                                    <constraint firstAttribute="width" constant="374" id="vMZ-7y-yuI"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="Big-M2-eEP" firstAttribute="centerX" secondItem="cWR-kR-Q5N" secondAttribute="centerX" id="ISz-eE-ZAT"/>
                             <constraint firstItem="254-PQ-pMq" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="19" id="Lct-yQ-Z4L"/>
                             <constraint firstItem="jPr-qT-uja" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="41" id="OyR-0O-DZR"/>
+                            <constraint firstItem="Dap-em-efn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="PhQ-2P-6hk"/>
+                            <constraint firstItem="Dap-em-efn" firstAttribute="leading" secondItem="Fh8-8i-cOG" secondAttribute="leading" id="Q0G-Jp-TOC"/>
+                            <constraint firstItem="jPr-qT-uja" firstAttribute="centerX" secondItem="cWR-kR-Q5N" secondAttribute="centerX" id="Rbl-rg-Klf"/>
+                            <constraint firstItem="cWR-kR-Q5N" firstAttribute="top" secondItem="jPr-qT-uja" secondAttribute="bottom" constant="25" id="Sir-f5-UvJ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="254-PQ-pMq" secondAttribute="trailing" constant="72" id="XQU-xU-d5j"/>
+                            <constraint firstItem="Dap-em-efn" firstAttribute="top" secondItem="254-PQ-pMq" secondAttribute="bottom" constant="95" id="ZmE-kF-II5"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="cWR-kR-Q5N" secondAttribute="bottom" constant="423" id="aSQ-xK-FT7"/>
+                            <constraint firstItem="cWR-kR-Q5N" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="djK-tS-Bex"/>
+                            <constraint firstItem="Fh8-8i-cOG" firstAttribute="top" secondItem="Dap-em-efn" secondAttribute="bottom" constant="8" id="dlh-oj-kg2"/>
                             <constraint firstItem="jPr-qT-uja" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ecv-1J-J6t"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="254-PQ-pMq" secondAttribute="bottom" constant="439" id="iIe-zZ-VKV"/>
+                            <constraint firstItem="Fh8-8i-cOG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mNa-tX-FFP"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Big-M2-eEP" secondAttribute="bottom" constant="403" id="s48-i5-fHC"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="24.637681159420293" y="35.054347826086961"/>
+            <point key="canvasLocation" x="23.188405797101453" y="34.239130434782609"/>
         </scene>
     </scenes>
     <resources>
